@@ -9,6 +9,15 @@
     </div>
   </div>
   <div class="spacer"></div>
+  <div id="describe">
+    <div class="label">
+      <%= "#{app_name} describe tag" %>
+    </div>
+    <div class="value">
+      <%= @version.describe_tag %>
+    </div>
+  </div>
+  <div class="spacer"></div>
   <div id="date">
     <div class="label">Date Deployed</div>
     <div class="value"><%= @version.deploy_date %></div>

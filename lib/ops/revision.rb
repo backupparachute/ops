@@ -34,6 +34,10 @@ module Ops
       end
     end
 
+    def describe_tag
+      @describe_tag ||= `git describe --tags`.strip
+    end
+
     def path
       File.absolute_path file_root
     end
