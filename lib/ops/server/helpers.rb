@@ -26,7 +26,8 @@ module Ops
     end
 
     def github_link(resource, subresource)
-      "<a href='#{GITHUB_ORG_LINK}/#{app_name}/#{resource}/#{subresource}'>#{subresource}</a>" unless subresource =~ /^Unknown/
+      user = Ops.config.config_github_user
+      "<a href='https://github.com/#{user}/#{app_name}/#{resource}/#{subresource}'>#{subresource}</a>" unless subresource =~ /^Unknown/
     end
 
     def print_detail(object, indent = 0)

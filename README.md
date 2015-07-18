@@ -1,7 +1,7 @@
 Ops
 ===
 
-[![Code Climate](https://codeclimate.com/github/primedia/ops.png)](https://codeclimate.com/github/primedia/ops)
+<!-- [![Code Climate](https://codeclimate.com/github/primedia/ops.png)](https://codeclimate.com/github/primedia/ops) -->
 
 This gem provides standardized support for obtaining environment, version, and heartbeat information from Sinatra or Rails-based web applications.
 
@@ -123,4 +123,3 @@ Proc.new { |_| { key: 'value' } }
 ```
 
 Then just provide your "callable" per the installation instructions above.
-
